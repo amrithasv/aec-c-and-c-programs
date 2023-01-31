@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cout << "enter test case" << endl;
+    cin>>t;
+    while(t--){
+        int x,y;
+        cout<<"\n enter amount:";
+        cin>>x>>y;
+        if(x>y)
+            cout<<y<<" is cheaper";
+                else if(y>x)
+                cout<<x<<" is cheaper";
+        else cout<<"both have same price";
+
+
+    }
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+    int followercount,followcount,t;
+    cout <<"enter no of test cases"  << endl;
+    cin>>t;
+    while(t--){
+        cout<<"\nenter number of followers:";
+        cin>>followercount;
+        cout<<"\nenter following count:";
+        cin>>followcount;
+        if(followcount>=followercount*10){
+            cout<<"\nAccount is spam";
+
+        }
+        else
+            cout<<"\nAccount is not spam";
+    }
+    return 0;
+}
