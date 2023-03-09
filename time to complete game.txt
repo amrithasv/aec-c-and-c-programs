@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    
+    while (t--) {
+        int x, y, z;
+        cin >> x >> y >> z;
+        
+        int time = x * y;
+        int breaks = (x / 3);
+        int break_time = breaks * z;
+        int total_time = time + break_time;
+        
+        if (x % 3 == 0) {
+            total_time -= z;
+        }
+        
+        cout << total_time << endl;
+    }
+    return 0;
+}
